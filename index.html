@@ -5,12 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>नानी की कविताएँ — रूक्मिणी बड़जातिया</title>
 <meta name="description" content="रूक्मिणी बड़जातिया की कविताएँ — उनकी सारी किताबें एक जगह। पहली किताब: उन्मुक्त मन।">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Eczar:wght@400;600;700&family=Tiro+Devanagari+Hindi:ital@0;1&family=Kalam:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="font" type="font/woff2" crossorigin
+      href="assets/fonts/RozhaOne-devanagari-400.woff2">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="preload" as="image" type="image/avif" fetchpriority="high"
+      imagesrcset="assets/hero_poet_560.avif 560w, assets/hero_poet.avif 992w"
+      imagesizes="(max-width: 1000px) 45vw, 992px">
 <link rel="stylesheet" href="css/base.css">
 <link rel="stylesheet" href="css/hero.css">
-<link rel="stylesheet" href="css/reader.css">
+<!-- reader.css dresses only the reader overlay, which is display:none until it
+     is opened, so it must not hold up the first paint of the banner -->
+<link rel="stylesheet" href="css/reader.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="css/reader.css"></noscript>
 
 </head>
 <body>
@@ -51,11 +57,16 @@
         </svg>
       </div>
       <div class="poet">
-        <img src="assets/hero_poet.webp"
-             srcset="assets/hero_poet_560.webp 560w, assets/hero_poet.webp 992w"
-             sizes="(max-width: 1000px) 45vw, 992px"   /* pin full res above 1000px: never softer than before */
-             width="992" height="1536"
-             fetchpriority="high" decoding="async" alt="रूक्मिणी बड़जातिया लिखते हुए, और उनके ऊपर उनकी कविताओं की दुनिया — दीप, वीणा, नदी, पथ और खुला द्वार">
+        <picture>
+          <source type="image/avif"
+                  srcset="assets/hero_poet_560.avif 560w, assets/hero_poet.avif 992w"
+                  sizes="(max-width: 1000px) 45vw, 992px">
+          <img src="assets/hero_poet.webp"
+               srcset="assets/hero_poet_560.webp 560w, assets/hero_poet.webp 992w"
+               sizes="(max-width: 1000px) 45vw, 992px"
+               width="992" height="1536"
+               fetchpriority="high" decoding="async" alt="रूक्मिणी बड़जातिया लिखते हुए, और उनके ऊपर उनकी कविताओं की दुनिया — दीप, वीणा, नदी, पथ और खुला द्वार">
+        </picture>
       </div>
       <div class="petals" id="petals" aria-hidden="true"></div>
     </div>
