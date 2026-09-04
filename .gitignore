@@ -1,3 +1,6 @@
 .DS_Store
 .azure.env
 *.log
+
+# local probes/harnesses, never part of the site
+_*.html
