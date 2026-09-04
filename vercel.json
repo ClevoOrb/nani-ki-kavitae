@@ -1,0 +1,39 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "headers": [
+    {
+      "//": "Fragments are always requested as ?v=<content hash of every fragment>, so a rebuild changes the URL. They can therefore be cached permanently — this is what makes page turns instant on a return visit.",
+      "source": "/fragments/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "//": "Artwork and ornaments change rarely; a month fresh, then served instantly from cache while it revalidates in the background.",
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=2592000, stale-while-revalidate=2592000" }
+      ]
+    },
+    {
+      "//": "Not content-hashed, so kept short — but stale-while-revalidate means a repeat visit never waits on the network for them.",
+      "source": "/(css|js)/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=600, stale-while-revalidate=604800" }
+      ]
+    },
+    {
+      "//": "book.json carries the version that busts the fragment cache, so it must always be checked.",
+      "source": "/data/book.json",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
+  ]
+}
