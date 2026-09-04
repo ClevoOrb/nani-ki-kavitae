@@ -1,0 +1,1385 @@
+{
+  "pages": [
+    {
+      "id": "cover-front",
+      "kind": "cover",
+      "printed": null,
+      "heading": "कवर",
+      "section": null
+    },
+    {
+      "id": "front-01",
+      "kind": "blank",
+      "printed": null,
+      "heading": "",
+      "section": null
+    },
+    {
+      "id": "front-02",
+      "kind": "title",
+      "printed": null,
+      "heading": "उन्मुक्त मन",
+      "section": null
+    },
+    {
+      "id": "front-03",
+      "kind": "colophon",
+      "printed": null,
+      "heading": "प्रकाशन",
+      "section": null
+    },
+    {
+      "id": "front-04",
+      "kind": "text",
+      "printed": null,
+      "heading": "मेरा कवि मन ...",
+      "section": null
+    },
+    {
+      "id": "front-05",
+      "kind": "text",
+      "printed": null,
+      "heading": "मेरा परिवार",
+      "section": null
+    },
+    {
+      "id": "front-06",
+      "kind": "text",
+      "printed": null,
+      "heading": "संपादकीय",
+      "section": null
+    },
+    {
+      "id": "front-07",
+      "kind": "text",
+      "printed": null,
+      "heading": "",
+      "section": null
+    },
+    {
+      "id": "front-08",
+      "kind": "toc",
+      "printed": null,
+      "heading": "विषय सूची",
+      "section": null
+    },
+    {
+      "id": "front-09",
+      "kind": "toc",
+      "printed": null,
+      "heading": "विषय सूची",
+      "section": null
+    },
+    {
+      "id": "div-आत्मबोध",
+      "kind": "divider",
+      "printed": null,
+      "heading": "आत्मबोध",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p001",
+      "kind": "text",
+      "printed": 1,
+      "heading": "आत्म चेतना",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p002",
+      "kind": "text",
+      "printed": 2,
+      "heading": "जीतना है स्वयं को",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p003",
+      "kind": "text",
+      "printed": 3,
+      "heading": "कर्मों की ज्वाला",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p004",
+      "kind": "text",
+      "printed": 4,
+      "heading": "सुखमय जीवन",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p005",
+      "kind": "text",
+      "printed": 5,
+      "heading": "आत्म स्वरूप",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p006",
+      "kind": "text",
+      "printed": 6,
+      "heading": "अपनत्व की गुलाल",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p007",
+      "kind": "text",
+      "printed": 7,
+      "heading": "चैतन्यमयी आत्मा",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p008",
+      "kind": "text",
+      "printed": 8,
+      "heading": "मानवता की ज्योति",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p009",
+      "kind": "text",
+      "printed": 9,
+      "heading": "वेदना के पल",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p010",
+      "kind": "text",
+      "printed": 10,
+      "heading": "धर्मपथ के राही",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p011",
+      "kind": "text",
+      "printed": 11,
+      "heading": "जीवन के मेले",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p012",
+      "kind": "text",
+      "printed": 12,
+      "heading": "कब तक ?",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p013",
+      "kind": "text",
+      "printed": 13,
+      "heading": "क्यों होता है मोह ?",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p014",
+      "kind": "text",
+      "printed": 14,
+      "heading": "कैसे ?",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p015",
+      "kind": "text",
+      "printed": 15,
+      "heading": "जीवन धन",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p016",
+      "kind": "text",
+      "printed": 16,
+      "heading": "मन का द्वार खोलो...",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p017",
+      "kind": "text",
+      "printed": 17,
+      "heading": "समय चक्र",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p018",
+      "kind": "text",
+      "printed": 18,
+      "heading": "मौन व्रत",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p019",
+      "kind": "text",
+      "printed": 19,
+      "heading": "क्षमा की धरती",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p020",
+      "kind": "text",
+      "printed": 20,
+      "heading": "एकाकीपन",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p021",
+      "kind": "text",
+      "printed": 21,
+      "heading": "प्रभु की आस्था",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "p022",
+      "kind": "text",
+      "printed": 22,
+      "heading": "मन में जागे सदा सम्यग्ज्ञान हमारा",
+      "section": "आत्मबोध"
+    },
+    {
+      "id": "div-चिन्तन के स्वर",
+      "kind": "divider",
+      "printed": null,
+      "heading": "चिन्तन के स्वर",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p023",
+      "kind": "text",
+      "printed": 23,
+      "heading": "शान्त जीवन",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p024",
+      "kind": "text",
+      "printed": 24,
+      "heading": "निर्मल जीवन",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p025",
+      "kind": "text",
+      "printed": 25,
+      "heading": "अहंकारी मन",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p026",
+      "kind": "text",
+      "printed": 26,
+      "heading": "अशान्त मन",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p027",
+      "kind": "text",
+      "printed": 27,
+      "heading": "आशा निराशा में झूलता आदमी",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p028",
+      "kind": "text",
+      "printed": 28,
+      "heading": "जिन्दगी एक मधुर बयार",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p029",
+      "kind": "text",
+      "printed": 29,
+      "heading": "जीवन स्वप्न",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p030",
+      "kind": "text",
+      "printed": 30,
+      "heading": "स्वप्न प्रेरणा",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p031",
+      "kind": "text",
+      "printed": 31,
+      "heading": "मन क्यों रोता बार-बार...",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p032",
+      "kind": "text",
+      "printed": 32,
+      "heading": "सत्यं वद प्रियं वद",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p033",
+      "kind": "text",
+      "printed": 33,
+      "heading": "नई दिशा",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p034",
+      "kind": "text",
+      "printed": 34,
+      "heading": "मन-मंदिर",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p035",
+      "kind": "text",
+      "printed": 35,
+      "heading": "माँ मैं कब तक चुप रहूँ",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p036",
+      "kind": "text",
+      "printed": 36,
+      "heading": "आत्म तत्व",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p037",
+      "kind": "text",
+      "printed": 37,
+      "heading": "जीने के लिये दस लक्षण",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p038",
+      "kind": "text",
+      "printed": 38,
+      "heading": "उत्तम आर्जव",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p039",
+      "kind": "text",
+      "printed": 39,
+      "heading": "उत्तम तप",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p040",
+      "kind": "text",
+      "printed": 40,
+      "heading": "निर्मल भावनाएँ",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p041",
+      "kind": "text",
+      "printed": 41,
+      "heading": "तृतीय चरण - शील निरतिचार भावना",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p042",
+      "kind": "text",
+      "printed": 42,
+      "heading": "षष्ठ चरण - शक्तित: त्याग भावना",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p043",
+      "kind": "text",
+      "printed": 43,
+      "heading": "नवम् चरण - वैयावृत्यकरण भावना",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p044",
+      "kind": "text",
+      "printed": 44,
+      "heading": "द्वादशम् चरण - बहुश्रुत भक्ति भावना",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p045",
+      "kind": "text",
+      "printed": 45,
+      "heading": "पंचदशम् चरण - मार्ग प्रभावना भावना",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p046",
+      "kind": "text",
+      "printed": 46,
+      "heading": "देह कष्ट उपहार बन गया...",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p047",
+      "kind": "text",
+      "printed": 47,
+      "heading": "अन्तर्ज्योति",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p048",
+      "kind": "text",
+      "printed": 48,
+      "heading": "जीवन स्वर",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p049",
+      "kind": "text",
+      "printed": 49,
+      "heading": "जीवन सत्य",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p050",
+      "kind": "text",
+      "printed": 50,
+      "heading": "मैं अकेली क्यों अकुला रही",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "p051",
+      "kind": "text",
+      "printed": 51,
+      "heading": "चिंतन",
+      "section": "चिन्तन के स्वर"
+    },
+    {
+      "id": "div-प्रकृति सौंदर्य",
+      "kind": "divider",
+      "printed": null,
+      "heading": "प्रकृति सौंदर्य",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p052",
+      "kind": "text",
+      "printed": 52,
+      "heading": "संवार लो अपनी धरा को ....",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p053",
+      "kind": "text",
+      "printed": 53,
+      "heading": "पथिक ! कुछ देर विश्राम कर लो !",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p054",
+      "kind": "text",
+      "printed": 54,
+      "heading": "ओ! कोयल...",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p055",
+      "kind": "text",
+      "printed": 55,
+      "heading": "उन्मुक्त पंछी",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p056",
+      "kind": "text",
+      "printed": 56,
+      "heading": "तपती गरमी की जलन",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p057",
+      "kind": "text",
+      "printed": 57,
+      "heading": "मेघ ! तुम अब तक क्यों न आए",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p058",
+      "kind": "text",
+      "printed": 58,
+      "heading": "ओ! वर्षा के बादल",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p059",
+      "kind": "text",
+      "printed": 59,
+      "heading": "मनभावन बरसात",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p060",
+      "kind": "text",
+      "printed": 60,
+      "heading": "शरद कर देता तन मन परितप्त",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p061",
+      "kind": "text",
+      "printed": 61,
+      "heading": "शरद पूर्णिमा",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p062",
+      "kind": "text",
+      "printed": 62,
+      "heading": "आज वसन्त ने खोला नवजीवन का द्वार",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p063",
+      "kind": "text",
+      "printed": 63,
+      "heading": "नव वासन्ती सुप्रभात",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p064",
+      "kind": "text",
+      "printed": 64,
+      "heading": "फागुन",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p065",
+      "kind": "text",
+      "printed": 65,
+      "heading": "सतरंगी होली",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p066",
+      "kind": "text",
+      "printed": 66,
+      "heading": "मनोहारी प्राकृतिक छटा",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "p067",
+      "kind": "text",
+      "printed": 67,
+      "heading": "मेरे देश की माटी",
+      "section": "प्रकृति सौंदर्य"
+    },
+    {
+      "id": "div-नव प्रेरणा",
+      "kind": "divider",
+      "printed": null,
+      "heading": "नव प्रेरणा",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p068",
+      "kind": "text",
+      "printed": 68,
+      "heading": "मेरी आँखों में जागा एक सपना...",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p069",
+      "kind": "text",
+      "printed": 69,
+      "heading": "ओ मेरे देश के मासूम बचपन",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p070",
+      "kind": "text",
+      "printed": 70,
+      "heading": "ओ मानवता की सत्प्रेरणा ....",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p071",
+      "kind": "text",
+      "printed": 71,
+      "heading": "मंगलमय हो नूतन वर्ष",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p072",
+      "kind": "text",
+      "printed": 72,
+      "heading": "मेरे देश के वीर जवानों",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p073",
+      "kind": "text",
+      "printed": 73,
+      "heading": "कवि ! तुम ऐसे गीत लिखो ।",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p074",
+      "kind": "text",
+      "printed": 74,
+      "heading": "स्वतंत्रता दिवस",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p075",
+      "kind": "text",
+      "printed": 75,
+      "heading": "अमर रहे गणतंत्र हमारा",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p076",
+      "kind": "text",
+      "printed": 76,
+      "heading": "तुम हो विधाता की अनुपम कृति ....",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p077",
+      "kind": "text",
+      "printed": 77,
+      "heading": "ओ! नई सदी के नव दीप",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p078",
+      "kind": "text",
+      "printed": 78,
+      "heading": "आत्मीयता",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "p079",
+      "kind": "text",
+      "printed": 79,
+      "heading": "नवदृष्टि",
+      "section": "नव प्रेरणा"
+    },
+    {
+      "id": "div-विविध",
+      "kind": "divider",
+      "printed": null,
+      "heading": "विविध",
+      "section": "विविध"
+    },
+    {
+      "id": "p080",
+      "kind": "text",
+      "printed": 80,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p081",
+      "kind": "text",
+      "printed": 81,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p082",
+      "kind": "text",
+      "printed": 82,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p083",
+      "kind": "text",
+      "printed": 83,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p084",
+      "kind": "text",
+      "printed": 84,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p085",
+      "kind": "text",
+      "printed": 85,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p086",
+      "kind": "text",
+      "printed": 86,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p087",
+      "kind": "text",
+      "printed": 87,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p088",
+      "kind": "text",
+      "printed": 88,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p089",
+      "kind": "text",
+      "printed": 89,
+      "heading": "",
+      "section": "विविध"
+    },
+    {
+      "id": "p090",
+      "kind": "text",
+      "printed": 90,
+      "heading": "जिन्दगी कितने रंग बदलती है ......",
+      "section": "विविध"
+    },
+    {
+      "id": "cover-back",
+      "kind": "cover",
+      "printed": null,
+      "heading": "पिछला कवर",
+      "section": null
+    }
+  ],
+  "toc": [
+    {
+      "title": "आत्मबोध",
+      "tint": "#FFC95C",
+      "accent": "#EFA61F",
+      "start": 10,
+      "items": [
+        {
+          "title": "आत्म चेतना",
+          "index": 11,
+          "printed": 1,
+          "subs": []
+        },
+        {
+          "title": "जीतना है स्वयं को",
+          "index": 12,
+          "printed": 2,
+          "subs": []
+        },
+        {
+          "title": "कर्मों की ज्वाला",
+          "index": 13,
+          "printed": 3,
+          "subs": []
+        },
+        {
+          "title": "सुखमय जीवन",
+          "index": 14,
+          "printed": 4,
+          "subs": []
+        },
+        {
+          "title": "आत्म स्वरूप",
+          "index": 15,
+          "printed": 5,
+          "subs": []
+        },
+        {
+          "title": "अपनत्व की गुलाल",
+          "index": 16,
+          "printed": 6,
+          "subs": []
+        },
+        {
+          "title": "चैतन्यमयी आत्मा",
+          "index": 17,
+          "printed": 7,
+          "subs": []
+        },
+        {
+          "title": "मानवता की ज्योति",
+          "index": 18,
+          "printed": 8,
+          "subs": []
+        },
+        {
+          "title": "वेदना के पल",
+          "index": 19,
+          "printed": 9,
+          "subs": []
+        },
+        {
+          "title": "धर्मपथ के राही",
+          "index": 20,
+          "printed": 10,
+          "subs": []
+        },
+        {
+          "title": "जीवन के मेले",
+          "index": 21,
+          "printed": 11,
+          "subs": []
+        },
+        {
+          "title": "कब तक ?",
+          "index": 22,
+          "printed": 12,
+          "subs": []
+        },
+        {
+          "title": "क्यों होता है मोह ?",
+          "index": 23,
+          "printed": 13,
+          "subs": []
+        },
+        {
+          "title": "कैसे ?",
+          "index": 24,
+          "printed": 14,
+          "subs": []
+        },
+        {
+          "title": "जीवन धन",
+          "index": 25,
+          "printed": 15,
+          "subs": []
+        },
+        {
+          "title": "मन का द्वार खोलो...",
+          "index": 26,
+          "printed": 16,
+          "subs": []
+        },
+        {
+          "title": "समय चक्र",
+          "index": 27,
+          "printed": 17,
+          "subs": []
+        },
+        {
+          "title": "मौन व्रत",
+          "index": 28,
+          "printed": 18,
+          "subs": []
+        },
+        {
+          "title": "क्षमा की धरती",
+          "index": 29,
+          "printed": 19,
+          "subs": []
+        },
+        {
+          "title": "एकाकीपन",
+          "index": 30,
+          "printed": 20,
+          "subs": []
+        },
+        {
+          "title": "प्रभु की आस्था",
+          "index": 31,
+          "printed": 21,
+          "subs": []
+        },
+        {
+          "title": "मन में जागे सदा सम्यग्ज्ञान हमारा",
+          "index": 32,
+          "printed": 22,
+          "subs": []
+        }
+      ]
+    },
+    {
+      "title": "चिन्तन के स्वर",
+      "tint": "#C3AEF5",
+      "accent": "#8E6FE0",
+      "start": 33,
+      "items": [
+        {
+          "title": "शान्त जीवन",
+          "index": 34,
+          "printed": 23,
+          "subs": []
+        },
+        {
+          "title": "निर्मल जीवन",
+          "index": 35,
+          "printed": 24,
+          "subs": []
+        },
+        {
+          "title": "अहंकारी मन",
+          "index": 36,
+          "printed": 25,
+          "subs": []
+        },
+        {
+          "title": "अशान्त मन",
+          "index": 37,
+          "printed": 26,
+          "subs": []
+        },
+        {
+          "title": "आशा निराशा में झूलता आदमी",
+          "index": 38,
+          "printed": 27,
+          "subs": []
+        },
+        {
+          "title": "जिन्दगी एक मधुर बयार",
+          "index": 39,
+          "printed": 28,
+          "subs": []
+        },
+        {
+          "title": "जीवन स्वप्न",
+          "index": 40,
+          "printed": 29,
+          "subs": []
+        },
+        {
+          "title": "स्वप्न प्रेरणा",
+          "index": 41,
+          "printed": 30,
+          "subs": []
+        },
+        {
+          "title": "मन क्यों रोता बार-बार...",
+          "index": 42,
+          "printed": 31,
+          "subs": []
+        },
+        {
+          "title": "सत्यं वद प्रियं वद",
+          "index": 43,
+          "printed": 32,
+          "subs": []
+        },
+        {
+          "title": "नई दिशा",
+          "index": 44,
+          "printed": 33,
+          "subs": []
+        },
+        {
+          "title": "मन-मंदिर",
+          "index": 45,
+          "printed": 34,
+          "subs": []
+        },
+        {
+          "title": "माँ मैं कब तक चुप रहूँ",
+          "index": 46,
+          "printed": 35,
+          "subs": []
+        },
+        {
+          "title": "आत्म तत्व",
+          "index": 47,
+          "printed": 36,
+          "subs": []
+        },
+        {
+          "title": "जीने के लिये दस लक्षण",
+          "index": 48,
+          "printed": 37,
+          "subs": [
+            {
+              "title": "उत्तम आर्जव",
+              "index": 49
+            },
+            {
+              "title": "उत्तम तप",
+              "index": 50
+            }
+          ]
+        },
+        {
+          "title": "निर्मल भावनाएँ",
+          "index": 51,
+          "printed": 40,
+          "subs": [
+            {
+              "title": "तृतीय चरण - शील निरतिचार भावना",
+              "index": 52
+            },
+            {
+              "title": "षष्ठ चरण - शक्तित: त्याग भावना",
+              "index": 53
+            },
+            {
+              "title": "नवम् चरण - वैयावृत्यकरण भावना",
+              "index": 54
+            },
+            {
+              "title": "द्वादशम् चरण - बहुश्रुत भक्ति भावना",
+              "index": 55
+            },
+            {
+              "title": "पंचदशम् चरण - मार्ग प्रभावना भावना",
+              "index": 56
+            }
+          ]
+        },
+        {
+          "title": "देह कष्ट उपहार बन गया...",
+          "index": 57,
+          "printed": 46,
+          "subs": []
+        },
+        {
+          "title": "अन्तर्ज्योति",
+          "index": 58,
+          "printed": 47,
+          "subs": []
+        },
+        {
+          "title": "जीवन स्वर",
+          "index": 59,
+          "printed": 48,
+          "subs": []
+        },
+        {
+          "title": "जीवन सत्य",
+          "index": 60,
+          "printed": 49,
+          "subs": []
+        },
+        {
+          "title": "मैं अकेली क्यों अकुला रही",
+          "index": 61,
+          "printed": 50,
+          "subs": []
+        },
+        {
+          "title": "चिंतन",
+          "index": 62,
+          "printed": 51,
+          "subs": []
+        }
+      ]
+    },
+    {
+      "title": "प्रकृति सौंदर्य",
+      "tint": "#74D8B4",
+      "accent": "#34B389",
+      "start": 63,
+      "items": [
+        {
+          "title": "संवार लो अपनी धरा को ....",
+          "index": 64,
+          "printed": 52,
+          "subs": []
+        },
+        {
+          "title": "पथिक ! कुछ देर विश्राम कर लो !",
+          "index": 65,
+          "printed": 53,
+          "subs": []
+        },
+        {
+          "title": "ओ! कोयल...",
+          "index": 66,
+          "printed": 54,
+          "subs": []
+        },
+        {
+          "title": "उन्मुक्त पंछी",
+          "index": 67,
+          "printed": 55,
+          "subs": []
+        },
+        {
+          "title": "तपती गरमी की जलन",
+          "index": 68,
+          "printed": 56,
+          "subs": []
+        },
+        {
+          "title": "मेघ ! तुम अब तक क्यों न आए",
+          "index": 69,
+          "printed": 57,
+          "subs": []
+        },
+        {
+          "title": "ओ! वर्षा के बादल",
+          "index": 70,
+          "printed": 58,
+          "subs": []
+        },
+        {
+          "title": "मनभावन बरसात",
+          "index": 71,
+          "printed": 59,
+          "subs": []
+        },
+        {
+          "title": "शरद कर देता तन मन परितप्त",
+          "index": 72,
+          "printed": 60,
+          "subs": []
+        },
+        {
+          "title": "शरद पूर्णिमा",
+          "index": 73,
+          "printed": 61,
+          "subs": []
+        },
+        {
+          "title": "आज वसन्त ने खोला नवजीवन का द्वार",
+          "index": 74,
+          "printed": 62,
+          "subs": []
+        },
+        {
+          "title": "नव वासन्ती सुप्रभात",
+          "index": 75,
+          "printed": 63,
+          "subs": []
+        },
+        {
+          "title": "फागुन",
+          "index": 76,
+          "printed": 64,
+          "subs": []
+        },
+        {
+          "title": "सतरंगी होली",
+          "index": 77,
+          "printed": 65,
+          "subs": []
+        },
+        {
+          "title": "मनोहारी प्राकृतिक छटा",
+          "index": 78,
+          "printed": 66,
+          "subs": []
+        },
+        {
+          "title": "मेरे देश की माटी",
+          "index": 79,
+          "printed": 67,
+          "subs": []
+        }
+      ]
+    },
+    {
+      "title": "नव प्रेरणा",
+      "tint": "#FFA6C4",
+      "accent": "#EE6D9C",
+      "start": 80,
+      "items": [
+        {
+          "title": "मेरी आँखों में जागा एक सपना...",
+          "index": 81,
+          "printed": 68,
+          "subs": []
+        },
+        {
+          "title": "ओ मेरे देश के मासूम बचपन",
+          "index": 82,
+          "printed": 69,
+          "subs": []
+        },
+        {
+          "title": "ओ मानवता की सत्प्रेरणा ....",
+          "index": 83,
+          "printed": 70,
+          "subs": []
+        },
+        {
+          "title": "मंगलमय हो नूतन वर्ष",
+          "index": 84,
+          "printed": 71,
+          "subs": []
+        },
+        {
+          "title": "मेरे देश के वीर जवानों",
+          "index": 85,
+          "printed": 72,
+          "subs": []
+        },
+        {
+          "title": "कवि ! तुम ऐसे गीत लिखो ।",
+          "index": 86,
+          "printed": 73,
+          "subs": []
+        },
+        {
+          "title": "स्वतंत्रता दिवस",
+          "index": 87,
+          "printed": 74,
+          "subs": []
+        },
+        {
+          "title": "अमर रहे गणतंत्र हमारा",
+          "index": 88,
+          "printed": 75,
+          "subs": []
+        },
+        {
+          "title": "तुम हो विधाता की अनुपम कृति ....",
+          "index": 89,
+          "printed": 76,
+          "subs": []
+        },
+        {
+          "title": "ओ! नई सदी के नव दीप",
+          "index": 90,
+          "printed": 77,
+          "subs": []
+        },
+        {
+          "title": "आत्मीयता",
+          "index": 91,
+          "printed": 78,
+          "subs": []
+        },
+        {
+          "title": "नवदृष्टि",
+          "index": 92,
+          "printed": 79,
+          "subs": []
+        }
+      ]
+    },
+    {
+      "title": "विविध",
+      "tint": "#8FC7F5",
+      "accent": "#4E9FDD",
+      "start": 93,
+      "items": [
+        {
+          "title": "धर्म जीवन भर साथ चलता रहे",
+          "index": 94,
+          "printed": 80,
+          "subs": []
+        },
+        {
+          "title": "एक ऐसा तीर्थ जो करती दोषों का प्रक्षालन",
+          "index": 94,
+          "printed": 80,
+          "subs": []
+        },
+        {
+          "title": "ज्ञान वही सही है जो आचरण में हो",
+          "index": 94,
+          "printed": 80,
+          "subs": []
+        },
+        {
+          "title": "अन्तरन शुद्ध रखकर भवसागर तरना है",
+          "index": 95,
+          "printed": 81,
+          "subs": []
+        },
+        {
+          "title": "यह तन भोगों में लिप्त न कर",
+          "index": 95,
+          "printed": 81,
+          "subs": []
+        },
+        {
+          "title": "जिन्दगी हर क्षण क्षीण होती जा रही",
+          "index": 96,
+          "printed": 82,
+          "subs": []
+        },
+        {
+          "title": "बीत रहे दिन बीत रही रातें",
+          "index": 96,
+          "printed": 82,
+          "subs": []
+        },
+        {
+          "title": "जीवन में कुछ खोना है कुछ पाना है",
+          "index": 97,
+          "printed": 83,
+          "subs": []
+        },
+        {
+          "title": "जीवन के ये सुन्दर पल, हम प्यार से गुजार देते...",
+          "index": 97,
+          "printed": 83,
+          "subs": []
+        },
+        {
+          "title": "मेरी मौन ममता दे रही शत् शत् आशीष",
+          "index": 98,
+          "printed": 84,
+          "subs": []
+        },
+        {
+          "title": "मुस्कुराता चल मुसाफिर, हर घड़ी मुस्कुराता चल...",
+          "index": 99,
+          "printed": 85,
+          "subs": []
+        },
+        {
+          "title": "असफलता एक चुनौती है, स्वीकार करो",
+          "index": 99,
+          "printed": 85,
+          "subs": []
+        },
+        {
+          "title": "पावस की काली घटा घिर आई",
+          "index": 99,
+          "printed": 85,
+          "subs": []
+        },
+        {
+          "title": "भीगी भीगी शाम है, पर कैसा अकेलापन",
+          "index": 100,
+          "printed": 86,
+          "subs": []
+        },
+        {
+          "title": "हम खुशनसीब हैं कि हमें सदा अच्छे दोस्तों का साथ मिला",
+          "index": 100,
+          "printed": 86,
+          "subs": []
+        },
+        {
+          "title": "जिन्दगी के बिखरे टूटे तारों को",
+          "index": 101,
+          "printed": 87,
+          "subs": []
+        },
+        {
+          "title": "अन्तर्मन मधु घोलकर, हर पल स्नेह, ममता बाँटों",
+          "index": 101,
+          "printed": 87,
+          "subs": []
+        },
+        {
+          "title": "प्राण विकल हैं स्वार्थ में, सम्बन्धों का दम टूट रहा",
+          "index": 102,
+          "printed": 88,
+          "subs": []
+        },
+        {
+          "title": "सारा जीवन लोगों की भीड़ में फँसे रहे",
+          "index": 102,
+          "printed": 88,
+          "subs": []
+        },
+        {
+          "title": "महका देते हैं जनमन को, घर आँगन बाग में खिले फूल",
+          "index": 103,
+          "printed": 89,
+          "subs": []
+        },
+        {
+          "title": "तुम्हारे मुस्कुराने से, जिन्दगी मुस्कुराती है",
+          "index": 103,
+          "printed": 89,
+          "subs": []
+        },
+        {
+          "title": "जिन्दगी कितने रंग बदलती है ......",
+          "index": 104,
+          "printed": 90,
+          "subs": []
+        }
+      ]
+    }
+  ],
+  "poemCount": 94,
+  "version": "fda3cb698d",
+  "printedCount": 90
+}

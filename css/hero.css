@@ -1,0 +1,448 @@
+/* ==========================================================================
+   The banner: the poet on one side, her poetry on the other, and the space
+   between them alive with the things her poems are made of — blossoms,
+   birds, drifting syllables.
+   ========================================================================== */
+
+/* --- ambient wash ------------------------------------------------------ */
+.sky { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+/* These were solid circles under filter: blur(84px). A blurred filter on a
+   fixed, continuously-animating layer is re-rasterised constantly and fights
+   with scrolling. A radial-gradient is soft by construction, so the same wash
+   costs a cheap gradient fill instead. */
+.sky span {
+  position: absolute; border-radius: 50%; opacity: .68;
+  animation: drift 28s ease-in-out infinite alternate;
+  will-change: transform;
+}
+.sky span:nth-child(1){ width:806px;height:806px;background:radial-gradient(circle closest-side, var(--marigold) 0 12%, color-mix(in srgb, var(--marigold) 62%, transparent) 38%, color-mix(in srgb, var(--marigold) 24%, transparent) 62%, color-mix(in srgb, var(--marigold) 6%, transparent) 82%, transparent 100%); top:-190px;  left:-180px; }
+.sky span:nth-child(2){ width:713px;height:713px;background:radial-gradient(circle closest-side, var(--rose) 0 12%, color-mix(in srgb, var(--rose) 62%, transparent) 38%, color-mix(in srgb, var(--rose) 24%, transparent) 62%, color-mix(in srgb, var(--rose) 6%, transparent) 82%, transparent 100%); top:18%;     right:-220px; animation-delay:-7s; }
+.sky span:nth-child(3){ width:666px;height:666px;background:radial-gradient(circle closest-side, var(--mint) 0 12%, color-mix(in srgb, var(--mint) 62%, transparent) 38%, color-mix(in srgb, var(--mint) 24%, transparent) 62%, color-mix(in srgb, var(--mint) 6%, transparent) 82%, transparent 100%); bottom:-190px;left:9%;     animation-delay:-13s; }
+.sky span:nth-child(4){ width:589px;height:589px;background:radial-gradient(circle closest-side, var(--lilac) 0 12%, color-mix(in srgb, var(--lilac) 62%, transparent) 38%, color-mix(in srgb, var(--lilac) 24%, transparent) 62%, color-mix(in srgb, var(--lilac) 6%, transparent) 82%, transparent 100%); bottom:1%;   right:18%;    animation-delay:-19s; }
+.sky span:nth-child(5){ width:527px;height:527px;background:radial-gradient(circle closest-side, var(--sky) 0 12%, color-mix(in srgb, var(--sky) 62%, transparent) 38%, color-mix(in srgb, var(--sky) 24%, transparent) 62%, color-mix(in srgb, var(--sky) 6%, transparent) 82%, transparent 100%); top:0%;      left:42%;     animation-delay:-3s; }
+@keyframes drift {
+  from { transform: translate3d(0,0,0) scale(1); }
+  to   { transform: translate3d(46px,-34px,0) scale(1.16); }
+}
+
+.stage { position: relative; z-index: 1; }
+
+/* --- hero layout ------------------------------------------------------- */
+.hero {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.02fr .98fr;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 5rem 2rem 4rem;
+  position: relative;
+}
+
+.hero-copy { position: relative; z-index: 3; }
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 9.5vw, 7.4rem);
+  line-height: .98;
+  margin: 0 0 .1em;
+  color: var(--ink);
+  letter-spacing: -.005em;
+}
+/* each word gets its own pastel wash, staggered in */
+.hero-title .w { position: relative; display: inline-block; }
+/* three long Devanagari words must be allowed to break to a new line */
+.hero-title { overflow-wrap: break-word; }
+.hero-title .w::after {
+  content: ""; position: absolute; left: -.06em; right: -.06em; bottom: .12em; height: .3em;
+  border-radius: 999px; z-index: -1; opacity: 0;
+  transform: scaleX(.2); transform-origin: left center;
+  animation: swipe .9s cubic-bezier(.2,.8,.3,1) forwards;
+}
+.hero-title .w:nth-child(1)::after { background: var(--marigold); animation-delay:.25s; }
+.hero-title .w:nth-child(2)::after { background: var(--rose);     animation-delay:.42s; }
+.hero-title .w:nth-child(3)::after { background: var(--mint);     animation-delay:.59s; }
+@keyframes swipe { to { opacity:.55; transform: scaleX(1); } }
+
+.hero-sub {
+  font-family: var(--font-hand);
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  color: var(--ink-soft);
+  margin: .4rem 0 1.5rem;
+}
+.hero-sub b { color: var(--lilac-deep); font-weight: 700; }
+
+.hero-blurb {
+  font-family: var(--font-verse);
+  font-size: 1.1rem; line-height: 2.05;
+  color: var(--ink-soft);
+  max-width: 33rem; margin: 0 0 2rem;
+}
+
+/* a couplet of hers, set as a pull-quote */
+.hero-verse {
+  font-family: var(--font-verse);
+  font-size: 1.06rem; line-height: 2.1;
+  color: var(--ink);
+  padding: 1rem 0 1rem 1.5rem;
+  border-left: 4px solid var(--coral);
+  margin: 0 0 2.2rem; max-width: 33rem;
+}
+.hero-verse cite {
+  display: block; margin-top: .5rem;
+  font-family: var(--font-hand); font-style: normal;
+  font-size: .95rem; color: var(--ink-faint);
+}
+
+.hero-cta { display: flex; gap: .8rem; flex-wrap: wrap; }
+
+/* --- the poet, and the air around her ---------------------------------- */
+.hero-art {
+  position: relative;
+  display: grid; place-items: center;
+  min-height: 520px;
+}
+
+.poet {
+  position: relative; z-index: 2;
+  animation: breathe 9s ease-in-out infinite;
+  will-change: transform;
+}
+/* the artwork is a tall 2:3 composition — bound it by viewport height rather
+   than column width, so the world above her head is never cropped away */
+.poet img {
+  height: min(calc(100vh - 190px), 820px); width: auto; max-width: 100%;
+  display: block;
+}
+@keyframes breathe {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  50%     { transform: translateY(-14px) rotate(-.5deg); }
+}
+
+/* the lamp at the top of her dream-world is the light source, so the glow
+   belongs up there rather than behind her shoulders */
+.poet-halo {
+  position: absolute; z-index: 1; top: 3%;
+  width: min(400px, 72%); aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle, var(--marigold) 0%, var(--coral) 38%, transparent 72%);
+  opacity: .38;
+  animation: pulse 7s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+@keyframes pulse { 0%,100%{transform:scale(1);opacity:.34} 50%{transform:scale(1.09);opacity:.46} }
+
+/* dashed arcs turning slowly around her. The artwork is a tall composition
+   now, so they ride low — centred on the poet herself rather than on the whole
+   panel — and sit behind her, so only the outer arcs show. */
+.orbit {
+  position: absolute; z-index: 1; pointer-events: none;
+  width: min(560px, 98%); aspect-ratio: 1;
+  left: 50%; top: 67%; transform: translate(-50%, -50%);
+  max-height: 100%;
+}
+.orbit svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.orbit .ring { fill: none; stroke-linecap: round; opacity: .58; will-change: transform; }
+.orbit .r1 { stroke: var(--lilac-deep); stroke-width: 2.5; stroke-dasharray: 9 16;
+             animation: spin 46s linear infinite; transform-origin: 50% 50%; }
+.orbit .r2 { stroke: var(--mint-deep);  stroke-width: 2;   stroke-dasharray: 4 22;
+             animation: spin 64s linear infinite reverse; transform-origin: 50% 50%; }
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* blossoms + syllables lifting off the page */
+.petals { position: absolute; inset: -6% -4%; z-index: 1; pointer-events: none; overflow: hidden; }
+.petal {
+  position: absolute; bottom: -8%; display: block;
+  line-height: 1; opacity: 0;
+  animation: rise linear infinite;
+  will-change: transform, opacity;
+}
+/* a syllable — set in the verse face so the glyph always exists */
+.petal.letter {
+  font-family: var(--font-display);
+  text-shadow: 0 2px 10px rgba(255,255,255,.9);
+  opacity: 0; font-weight: 400;
+}
+/* a bloom — a drawn dot with a pale heart and a soft bloom of colour around it,
+   so it never depends on a font shipping a flower glyph */
+.petal.bloom {
+  display: block; border-radius: 50%;
+  background: radial-gradient(circle at 42% 38%,
+              rgba(255,255,255,.95) 0 18%, currentColor 22% 100%);
+  box-shadow: 0 0 0 3px color-mix(in srgb, currentColor 26%, transparent),
+              0 0 12px color-mix(in srgb, currentColor 55%, transparent);
+}
+@keyframes rise {
+  0%   { opacity: 0; transform: translate3d(0,0,0) rotate(0deg) scale(.7); }
+  12%  { opacity: .85; }
+  74%  { opacity: .7; }
+  /* --ry is set in px by petals.js from the column height; a % here would
+     resolve against the petal's own 20px box and it would barely move. */
+  100% { opacity: 0; transform: translate3d(var(--dx,30px), var(--ry,-640px), 0) rotate(var(--rot,180deg)) scale(1.05); }
+}
+
+/* --- section rhythm ---------------------------------------------------- */
+.section { padding: 5.5rem 0; position: relative; z-index: 1; }
+.section-head { text-align: center; margin-bottom: 3rem; }
+.section-head h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin: 0 0 .4rem; color: var(--ink);
+}
+.section-head p {
+  font-family: var(--font-hand); color: var(--ink-faint);
+  font-size: 1.05rem; margin: 0;
+}
+
+/* --- the featured volume ------------------------------------------------
+   With a single published book, a grid of cards leaves most of the row empty.
+   The book gets a full-width feature instead: cover on one side, and on the
+   other what is actually inside it. When more volumes arrive they can sit in
+   a plain grid below this one.
+   ------------------------------------------------------------------------ */
+.feature {
+  display: grid; grid-template-columns: 290px 1fr; gap: 3.2rem;
+  align-items: center;
+  max-width: 980px; margin: 0 auto;
+  background: var(--paper); border-radius: 30px;
+  padding: 2.8rem 3.2rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.feature-cover {
+  border: none; padding: 0; background: none; cursor: pointer;
+  display: block; width: 100%;
+  border-radius: 14px;
+  transform: rotate(-2deg);
+  transition: transform .45s cubic-bezier(.2,.9,.3,1.2), box-shadow .45s;
+  box-shadow: 0 18px 44px -12px rgba(58,49,69,.45);
+}
+.feature-cover:hover { transform: rotate(0deg) translateY(-8px) scale(1.02); }
+.feature-cover img {
+  /* height:auto is required — the width/height attributes on the tag are a
+     presentational hint that sets a pixel height, and aspect-ratio is ignored
+     unless height resolves to auto. */
+  width: 100%; height: auto; aspect-ratio: 2/3; object-fit: cover;
+  display: block; border-radius: 14px;
+}
+
+.feature-body h3 {
+  font-family: var(--font-display); font-size: clamp(2rem, 4vw, 2.7rem);
+  margin: 0 0 .1rem; color: var(--ink);
+}
+.feature-body .year {
+  font-family: var(--font-hand); color: var(--ink-faint);
+  font-size: 1rem; margin: 0 0 1.1rem;
+}
+/* her own words about the book, set as a pull-quote rather than a blurb */
+.feature-note {
+  font-family: var(--font-verse); font-size: 1.14rem; line-height: 1.95;
+  color: var(--ink); margin: 0 0 1.6rem; padding: 0 0 0 1.3rem;
+  border-left: 3px solid var(--coral);
+  max-width: 32rem;
+}
+.feature-note cite {
+  display: block; margin-top: .5rem;
+  font-family: var(--font-hand); font-style: normal;
+  font-size: .92rem; color: var(--ink-faint);
+}
+
+/* the five खंड as a line of colour, not a row of counters */
+.khand {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: .3rem 0; margin: 0 0 1.5rem; padding: 0;
+  font-family: var(--font-title); font-size: 1rem; font-weight: 600;
+}
+.khand span { color: var(--c); }
+/* a drawn dot between names — never a font glyph that may not exist */
+.khand span:not(:last-child)::after {
+  content: ""; display: inline-block; vertical-align: middle;
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--ink-faint); opacity: .5;
+  margin: 0 .7rem;
+}
+
+.feature-close {
+  font-family: var(--font-verse); font-size: 1rem; line-height: 1.9;
+  color: var(--ink-soft); margin: 0 0 1.8rem; max-width: 30rem;
+}
+.feature-close b { color: var(--ink); font-weight: 600; }
+
+.feature-body .btn span { transition: transform .3s; display: inline-block; }
+.feature-body .btn:hover span { transform: translateX(4px); }
+
+/* the next volumes, as a quiet line rather than an empty ghost card */
+.more-soon {
+  text-align: center; margin: 2.2rem 0 0;
+  font-family: var(--font-hand); color: var(--ink-faint); font-size: 1.02rem;
+}
+.more-soon span { color: var(--lilac-deep); margin-right: .4rem; }
+
+@media (max-width: 820px) {
+  .feature {
+    grid-template-columns: 1fr; gap: 2rem; padding: 2rem 1.6rem;
+    justify-items: center; text-align: center;
+  }
+  .feature-cover { width: min(240px, 70%); }
+  .feature-note { margin-inline: auto; }
+  .khand { justify-content: center; }
+}
+
+/* --- about the poet ---------------------------------------------------- */
+.about {
+  display: grid; grid-template-columns: 240px 1fr; gap: 3rem; align-items: center;
+  background: var(--paper); border-radius: 30px; padding: 3rem;
+  box-shadow: var(--shadow-soft);
+}
+.about-portrait {
+  width: 240px; height: 240px; border-radius: 50%;
+  overflow: hidden; background: var(--shell);
+  box-shadow: 0 0 0 10px var(--paper), 0 0 0 13px var(--marigold);
+}
+.about-portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.about h3 { font-family: var(--font-display); font-size: 2.1rem; margin: 0 0 .1rem; }
+.about .role { font-family: var(--font-hand); color: var(--rose-deep); margin: 0 0 1.1rem; }
+.about p { font-family: var(--font-verse); font-size: 1.04rem; line-height: 2; color: var(--ink-soft); margin: 0 0 .9rem; }
+.tags { display: flex; gap: .5rem; flex-wrap: wrap; margin-top: 1.2rem; }
+.tags span { font-size: .82rem; font-weight: 600; padding: .35rem .95rem; border-radius: 999px; color: var(--ink); }
+
+.foot {
+  text-align: center; padding: 3rem 2rem 4rem;
+  font-family: var(--font-hand); color: var(--ink-faint); position: relative; z-index: 1;
+}
+
+/* --- responsive -------------------------------------------------------- */
+@media (max-width: 1000px) {
+  .hero { grid-template-columns: 1fr; text-align: center; padding-top: 3.5rem; gap: 1rem; }
+  .hero-blurb, .hero-verse { margin-inline: auto; }
+  .hero-verse { text-align: left; }
+  .hero-cta { justify-content: center; }
+  /* no reserved box — it would hold 400px open regardless of the art */
+  .hero-art { min-height: 0; order: -1; }
+  .poet img { height: min(38vh, 420px); }
+  /* the rings must come down with the artwork, or their dashes scatter far
+     outside it and stop reading as a ring at all */
+  /* sized against the artwork's own height, so the ring stays inside the art
+     box and cannot reach down into the poet's name */
+  .orbit { height: 92%; width: auto; aspect-ratio: 1; top: 50%; }
+  .poet-halo { width: min(280px, 54%); top: 2%; }
+  .about { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 2rem; }
+  .tags { justify-content: center; }
+}
+@media (max-width: 560px) {
+  .wrap { padding: 0 1.2rem; }
+  .section { padding: 3.5rem 0; }
+  .about { padding: 1.6rem; }
+  .about-portrait { width: 180px; height: 180px; }
+
+  /* On a phone the banner has to earn its height: the artwork is capped
+     against the viewport and the reserved 400px art box is dropped, so the
+     title, the line under it and both buttons land on the first screen. */
+  .hero { min-height: auto; padding: 1.5rem 1.2rem 2.4rem; gap: 1rem; }
+  .hero-art { min-height: 0; }
+  .poet img { height: min(43vh, 380px); }
+  .hero-title { font-size: clamp(2.05rem, 10.5vw, 3rem); }
+  .eyebrow { font-size: .92rem; margin-bottom: .3rem; }
+  .hero-sub { font-size: 1rem; margin: .25rem 0 .9rem; }
+  .hero-verse {
+    font-size: .96rem; line-height: 1.85;
+    padding: .5rem 0 .5rem 1rem; margin-bottom: 1.3rem;
+  }
+  .hero-cta { gap: .55rem; }
+  .btn { padding: .72rem 1.25rem; font-size: .93rem; }
+
+  /* centred and wrapping, the inline dots would dangle at the end of a line —
+     use real gaps between the खंड instead */
+  .khand { justify-content: center; gap: .4rem 1rem; }
+  .khand span:not(:last-child)::after { display: none; }
+  .feature-close, .feature-note { margin-inline: auto; }
+
+  /* the rings are sized for a large figure; at phone scale they have to come
+     down with the artwork or the dashes read as scattered debris */
+  .orbit { height: 90%; width: auto; aspect-ratio: 1; top: 50%; }
+  .poet-halo { width: min(260px, 70%); top: 2%; }
+}
+
+@media (max-width: 380px) {
+  .orbit { height: 88%; }
+  .hero-title { font-size: 1.95rem; }
+  .hero-verse { font-size: .9rem; line-height: 1.8; }
+  .btn { padding: .66rem 1rem; font-size: .87rem; }
+  .hero-cta { gap: .45rem; }
+}
+
+/* --- the dedication ----------------------------------------------------- */
+.gift {
+  position: relative; max-width: 640px; margin: 0 auto; text-align: center;
+  background: var(--paper); border-radius: 28px; padding: 3.4rem 2.6rem 2.8rem;
+  box-shadow: var(--shadow-soft);
+  transform: rotate(-.7deg);
+  overflow: hidden;            /* so the ribbon follows the rounded corners */
+}
+/* a torn-ribbon edge of her section colours along the top */
+.gift::before {
+  content: ""; position: absolute; inset: 0 0 auto 0; height: 8px;
+  border-radius: 28px 28px 0 0;
+  background: linear-gradient(90deg,
+    var(--marigold) 0 20%, var(--lilac) 20% 40%, var(--mint) 40% 60%,
+    var(--rose) 60% 80%, var(--sky) 80% 100%);
+}
+.gift .diya { width: 72px; height: auto; display: block; margin: 0 auto .9rem; overflow: visible; }
+/* Fills are literal colours on the shapes and only themed from here: var()
+   inside an SVG presentation attribute is not honoured by every engine, and a
+   lamp that fails to paint makes the whole card look broken. */
+.gift .diya .f-outer { fill: var(--marigold); }
+.gift .diya .d-glow  { fill: var(--coral); opacity: .38; }
+.gift .diya .d-bowl  { fill: var(--coral-deep); }
+.gift .diya .d-lip   { fill: var(--coral); }
+.gift .flame { transform-origin: 60px 58px; animation: flicker 2.6s ease-in-out infinite; }
+@keyframes flicker {
+  0%, 100% { transform: scale(1) rotate(0deg);   opacity: 1; }
+  30%      { transform: scale(1.07) rotate(-3deg); opacity: .92; }
+  65%      { transform: scale(.95) rotate(2.5deg); opacity: 1; }
+}
+.gift h2 {
+  font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.9rem);
+  margin: 0 0 .8rem; color: var(--ink);
+}
+.gift-note {
+  font-family: var(--font-verse); font-size: 1.08rem; line-height: 2;
+  color: var(--ink-soft); margin: 0 auto 1.4rem; max-width: 30rem;
+}
+.gift-sign {
+  font-family: var(--font-hand); font-weight: 700; font-size: 1.3rem;
+  color: var(--rose-deep); margin: 0;
+}
+.gift-en {
+  font-family: var(--font-title); font-size: .84rem; color: var(--ink-faint);
+  margin: .9rem 0 0;
+}
+@media (max-width: 560px) { .gift { padding: 2.6rem 1.4rem 2rem; } }
+
+/* ==========================================================================
+   Nothing is removed here — these rules only stop work whose result cannot be
+   seen. The reader is a full-screen opaque overlay, so everything behind it is
+   hidden; and the banner's own motion is pointless once it is scrolled away.
+   Both also release the compositor layers while paused.
+   ========================================================================== */
+body.reading .sky span,
+body.reading .petal,
+body.reading .orbit .ring,
+body.reading .poet,
+body.reading .poet-halo,
+body.reading .gift .flame,
+body.reading .hero-title .w::after,
+.hero-idle .petal,
+.hero-idle .orbit .ring,
+.hero-idle .poet,
+.hero-idle .poet-halo,
+.gift-idle .flame {
+  animation-play-state: paused;
+  will-change: auto;
+}
+
+/* Short screens — not narrow ones — are what force the artwork down. Keyed on
+   height so a tall 375px phone still gets the full-size banner. */
+@media (max-width: 560px) and (max-height: 640px) {
+  .poet img { height: min(32vh, 220px); }
+}
