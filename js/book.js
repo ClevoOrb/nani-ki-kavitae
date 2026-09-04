@@ -624,6 +624,12 @@
     document.body.classList.remove("reading");
     document.body.style.overflow = "";
     closeToc();
+    // The hash is what makes a page shareable, but it must not outlive the
+    // book being closed — otherwise a refresh reads it back and reopens the
+    // reader over the banner. replaceState so no history entry is added.
+    if (location.hash) {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
   }
 
   /* ---------- wiring ---------------------------------------------------- */
