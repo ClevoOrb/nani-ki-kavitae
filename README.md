@@ -30,6 +30,21 @@ checked a second time. `source/ocr/final.json` is the adjudicated text and
 authority for every word on the site. `source/work/build_site.py` regenerates
 `fragments/` and `data/book.json` from them.
 
+## Deploying
+
+`index.html` is served with `must-revalidate`, so it is always fetched fresh;
+everything it points at is cached hard. That only works if a changed file has a
+changed URL, so **before committing a change to anything in `css/` or `js/`,
+run:**
+
+```
+python3 source/work/stamp_assets.py
+```
+
+It writes a content hash onto each reference (`css/hero.css?v=58f7ff72`). Miss
+it and browsers will keep serving the previous copy for up to a week. Page
+fragments are already stamped the same way by `build_site.py`.
+
 ## The reader
 
 - Two-page spread on wide screens, a single leaf on phones.
