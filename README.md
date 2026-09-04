@@ -32,18 +32,14 @@ authority for every word on the site. `source/work/build_site.py` regenerates
 
 ## Deploying
 
-`index.html` is served with `must-revalidate`, so it is always fetched fresh;
-everything it points at is cached hard. That only works if a changed file has a
-changed URL, so **before committing a change to anything in `css/` or `js/`,
-run:**
+Push to `main`; Vercel builds and deploys from the repository root.
 
-```
-python3 source/work/stamp_assets.py
-```
-
-It writes a content hash onto each reference (`css/hero.css?v=58f7ff72`). Miss
-it and browsers will keep serving the previous copy for up to a week. Page
-fragments are already stamped the same way by `build_site.py`.
+`index.html` is served with `must-revalidate`, so it is always fetched fresh,
+and everything it points at is cached permanently. That is only safe because a
+changed file gets a changed URL: the build runs `scripts/stamp.mjs`, which
+writes a hash of each stylesheet and script onto its reference
+(`css/hero.css?v=58f7ff72`). Nothing to remember and nothing to run by hand.
+Page fragments are stamped the same way, by `build_site.py`.
 
 ## The reader
 
